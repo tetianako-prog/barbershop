@@ -1,0 +1,123 @@
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.section-container {
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.section-subtitle {
+  margin-bottom: 20px;
+  color: #303030;
+  &::before {
+    border-bottom: 1px solid #303030;
+  }
+}
+.section-title {
+  font-family: $accent-font;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.about-us-btn {
+  margin-bottom: 0;
+  font-family: $main-font;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  padding: 11px 0;
+  min-width: 194px;
+  text-align: center;
+  background: transparent;
+  transition: background 250ms ease-in;
+  &:hover {
+    background: $accent-color;
+  }
+}
+
+.first-text {
+  font-family: $main-font;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.second-text {
+  font-family: $main-font;
+  margin-bottom: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+
+.about-us-columns {
+  display: flex;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   margin: -32px;
+  // }
+  .column1,
+  .column2 {
+    @media screen and (min-width: 768px) {
+      width: calc((100%-15px * 4) / 2);
+      margin: 15px;
+    }
+    // @media screen and (min-width: 1200px) {
+    //   width: calc((100%-32px * 4) / 2);
+
+    //   margin: 32px;
+    // }
+  }
+  .column1 {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+}
+
+.about-us {
+  .img1 {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+}
