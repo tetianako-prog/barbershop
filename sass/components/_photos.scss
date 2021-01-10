@@ -1,0 +1,30 @@
+.photos {
+  .sub-title {
+    color: #303030;
+    &::before {
+      border-bottom: 1px solid #303030;
+      top: 5px;
+    }
+  }
+
+  .photos-list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    li {
+      margin-bottom: 30px;
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 15px * 4) / 2);
+        margin: 15px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 15px * 8) / 4);
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
