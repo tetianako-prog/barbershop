@@ -739,4 +739,156 @@ body.is-open {
     margin-right: 15px;
   }
 }
+
+.services {
+  background: #111319;
+  background-image: url(./../img/services-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    background-image: url(./../img/services-background-tablet.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    background-image: url(./../img/services-background-desktop.png);
+  }
+}
+
+.services-title {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.services-list {
+  width: 100%;
+  padding: 30px;
+  background-image: url("./../img/services-bg2.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .services-list {
+    background-image: url("./../img/services-bg-tablet.png");
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services-list {
+    display: none;
+  }
+}
+
+.services-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.services-list .line {
+  margin-right: 6px;
+  margin-left: 6px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.services-btn {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 11px 0;
+  min-width: 194px;
+  text-align: center;
+  background: transparent;
+  -webkit-transition: background 250ms ease-in;
+  transition: background 250ms ease-in;
+}
+
+.services-btn:hover {
+  background: #ff6c00;
+}
+
+.services-descktop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .services-descktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.services-descktop .services-list-descktop {
+  width: 50%;
+  padding: 30px 40px;
+  background-repeat: no-repeat;
+}
+
+.services-descktop .services-list-descktop:first-child {
+  background-image: url(./../img/services-bg1-desktop.png);
+}
+
+.services-descktop .services-list-descktop:last-child {
+  background-image: url(./../img/services-bg2-desktop.png);
+}
+
+.services-descktop .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.services-descktop .line {
+  margin-right: 6px;
+  margin-left: 6px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+}
 /*# sourceMappingURL=main.css.map */
