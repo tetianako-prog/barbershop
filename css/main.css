@@ -891,4 +891,165 @@ body.is-open {
   height: 1px;
   background: rgba(157, 164, 189, 0.12);
 }
+
+.our-traditions .sub-title {
+  color: #303030;
+}
+
+.our-traditions .sub-title::before {
+  border-bottom: 1px solid #303030;
+}
+
+.our-traditions .title {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.our-traditions .text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.traditions-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .traditions-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .traditions {
+    width: 480px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+.achievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .achievements {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .achievements {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 130px;
+  }
+}
+
+.achievements .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.achievements .column:first-child {
+  margin-right: 30px;
+  margin-top: 44px;
+}
+
+@media screen and (min-width: 1200px) {
+  .achievements .column:first-child {
+    margin-top: 0;
+  }
+}
+
+.achievements .column:last-child {
+  margin-top: 79px;
+}
+
+@media screen and (min-width: 1200px) {
+  .achievements .column:last-child {
+    margin-top: 35px;
+  }
+}
+
+.achievements .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 133px;
+  background: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.achievements .number {
+  position: relative;
+  margin-bottom: 6px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.achievements .plus {
+  position: absolute;
+  bottom: 10px;
+  font-size: 16px;
+  color: #ff6c00;
+}
+
+.achievements .text {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #303030;
+}
 /*# sourceMappingURL=main.css.map */

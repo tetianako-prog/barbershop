@@ -1,0 +1,113 @@
+.our-traditions {
+  .sub-title {
+    color: #303030;
+    &::before {
+      border-bottom: 1px solid #303030;
+    }
+  }
+  .title {
+    margin-bottom: 20px;
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+  }
+  .text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+
+    letter-spacing: 0.02em;
+
+    color: #555555;
+  }
+}
+
+.traditions-container {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.traditions {
+  @media screen and (min-width: 768px) {
+    width: 480px;
+    align-self: flex-start;
+  }
+}
+
+.achievements {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
+  @media screen and (min-width: 1200px) {
+    order: -1;
+    margin-right: 130px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    &:first-child {
+      margin-right: 30px;
+      margin-top: 44px;
+      @media screen and (min-width: 1200px) {
+        margin-top: 0;
+      }
+    }
+    &:last-child {
+      margin-top: 79px;
+      @media screen and (min-width: 1200px) {
+        margin-top: 35px;
+      }
+    }
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 133px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+  }
+  .number {
+    position: relative;
+    margin-bottom: 6px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+  }
+  .plus {
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+    color: $accent-color;
+  }
+  .text {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+
+    color: #303030;
+  }
+}
