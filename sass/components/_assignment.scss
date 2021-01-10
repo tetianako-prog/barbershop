@@ -1,0 +1,131 @@
+.container-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer-container {
+  max-width: 480px;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+}
+.assignment-left {
+  @media screen and (min-width: 1200px) {
+    padding-right: 40px;
+    width: 600px;
+    margin-left: auto;
+  }
+}
+.footer-container:last-child {
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+  }
+}
+
+.assignment,
+.contacts {
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+  }
+}
+.assignment {
+  background: #191c26;
+  .title {
+    margin-bottom: 20px;
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  .assignment-form {
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  .form-field {
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 44px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+      outline: none;
+      color: #fff;
+      &::placeholder {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: rgba(157, 164, 189, 0.4);
+      }
+      &:focus {
+        border-bottom: 1px solid #fff;
+      }
+      &:focus::placeholder {
+        color: #fff;
+      }
+    }
+    input {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    textarea {
+      height: 76px;
+      resize: none;
+    }
+  }
+  .form-button {
+    font-family: $main-font;
+    text-transform: uppercase;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    padding: 11px 0;
+    min-width: 194px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background 250ms ease-in;
+
+    &:hover {
+      background: $accent-color;
+    }
+  }
+}
+
+.form-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -15px;
+  }
+  .form-name,
+  .form-email {
+    @media screen and (min-width: 768px) {
+      width: calc((100%-15px * 4) / 2);
+      margin: 15px;
+    }
+  }
+}

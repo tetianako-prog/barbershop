@@ -1,0 +1,84 @@
+.contacts {
+  background: #191c26;
+  background-image: url('./../img/contacts-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .title {
+    margin-bottom: 20px;
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  .contacts-list {
+    margin-bottom: 44px;
+
+    li {
+      margin-bottom: 20px;
+    }
+    .contacts-link {
+      display: flex;
+      align-items: baseline;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.67;
+      letter-spacing: 0.02em;
+      color: #9da4bd;
+    }
+    .icon {
+      margin-right: 20px;
+    }
+  }
+
+  .working-hours {
+    .sub-title {
+      color: #fff;
+    }
+    @media screen and (min-width: 768px) {
+      padding-left: 70px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 0;
+    }
+  }
+  .hours-text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+  }
+}
+
+.contacts-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+.contacts-list,
+.working-hours {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 15px * 4) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+  }
+}
